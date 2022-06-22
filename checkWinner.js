@@ -1,7 +1,9 @@
 function checkWinner(id) {
+    const message = document.createElement("p");
     if (winner == id) {
-        document.getElementById("createHere").append("<h1>You won !!</h1>");
+        message.innerHTML = "You won!";
     } else {
-        document.getElementById("createHere").append("<h1>You lose !! I was behind button " + winner + ".</h1>");
+        message.innerHTML = "You lose! I was behind button " + winner + ".";
     }
+    document.getElementById("createHere").appendChild(message);
 }
