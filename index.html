@@ -15,6 +15,7 @@
     <form method = "post" onsubmit = "return false">
       <input id = "number" type = "number" class = "input-medium" value = "6">
       <button type = "button" class = "btn btn-primary" onclick = "createButtons(document.getElementById('number').value)">Create</button>
+      <button type = "button" class = "btn btn-primary" onclick = "document.getElementById('createHere').replaceChildren()">Reset</button>
     </form>
     </div>
     <div id = "createHere" class = "container">
